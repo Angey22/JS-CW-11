@@ -1,5 +1,7 @@
+// "Эндпоинт".
 const BASE_URL = 'http://localhost:4040';
 
+// Код функции для удаления.
 function removeBook(bookId) {
   const url = `${BASE_URL}/books/${bookId}`;
   const options = {
@@ -9,6 +11,7 @@ function removeBook(bookId) {
   return fetch(url, options).then(res => res.json());
 }
 
-// removeBook(15);
-// removeBook(14);
+// Активируем функцию с заданным "id".
+// removeBook(10);
+// removeBook(11);
 
